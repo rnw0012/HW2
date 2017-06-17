@@ -4,7 +4,7 @@ declared-services:
     label: conversation
     plan: free
 applications:
-- name: comp4970-rw
+- name: CAr_Dashboard_Current
   command: npm start
   path: .
   memory: 256M
