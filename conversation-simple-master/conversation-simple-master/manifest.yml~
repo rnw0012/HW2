@@ -1,4 +1,8 @@
 ---
+declared-services:
+  my-conversation-service:
+    label: conversation
+    plan: free
 applications:
 - name: conversation-simple
   command: npm start
@@ -6,5 +10,6 @@ applications:
   memory: 256M
   instances: 1
   services:
+  - my-conversation-service
   env:
     NPM_CONFIG_PRODUCTION: false
